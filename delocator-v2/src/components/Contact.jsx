@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-// Backgrounds
 import bg1 from '../assets/images/background1.jpg';
 import bg2 from '../assets/images/background2.jpg';
 import bg3 from '../assets/images/background3.jpg';
@@ -19,7 +18,6 @@ const Contact = ({ onBack }) => {
   return (
     <div style={{ position: 'relative', height: '100vh', width: '100vw', overflow: 'hidden', backgroundColor: '#111', fontFamily: "'Rokkitt', serif" }}>
       
-      {/* 1. BACKGROUND LAYER */}
       <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
         {backgrounds.map((img, index) => (
           <div key={index} style={{ 
@@ -31,7 +29,6 @@ const Contact = ({ onBack }) => {
         <div style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(0,0,0,0.5)', zIndex: 1 }}></div>
       </div>
 
-      {/* 2. MAIN CARD */}
       <main style={{ 
         position: 'relative', 
         zIndex: 10, 
@@ -45,18 +42,17 @@ const Contact = ({ onBack }) => {
         <div style={{ 
           backgroundColor: 'white', 
           width: '100%', 
-          maxWidth: '1100px', // 👈 Updated from 800px to match AddEdit
+          maxWidth: '1100px', 
           borderRadius: '15px', 
           boxShadow: '0 20px 60px rgba(0,0,0,0.4)', 
           display: 'flex', 
           flexDirection: 'column', 
-          height: '80vh',      // 👈 Updated from 70vh to match AddEdit
-          maxHeight: '85vh',   // 👈 Added to match AddEdit
+          height: '80vh',    
+          maxHeight: '85vh', 
           alignSelf: 'center', 
           overflow: 'hidden'
         }}>
           
-          {/* HEADER */}
           <div style={{ padding: '20px 30px', borderBottom: '1px solid #eee', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <h2 style={{ color: '#1d6331', margin: 0, fontSize: '32px', fontWeight: 'normal', fontFamily: "'Desyrel', sans-serif", textTransform: 'uppercase' }}>
               Contact
@@ -66,7 +62,6 @@ const Contact = ({ onBack }) => {
             </span>
           </div>
 
-          {/* CONTENT */}
           <div style={{ padding: '40px', flex: 1, display: 'flex', flexDirection: 'column', gap: '30px', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
             <p style={{ color: '#555', fontSize: '16px', lineHeight: '1.8', maxWidth: '600px' }}>
               Have questions, feedback, or more exciting Delocator ideas? Get in touch with us! 
@@ -74,7 +69,6 @@ const Contact = ({ onBack }) => {
             </p>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', width: '100%', maxWidth: '400px' }}>
-              {/* Instagram Link */}
               <a 
                 href="https://www.instagram.com/lab.synthe/" 
                 target="_blank" 
@@ -87,7 +81,6 @@ const Contact = ({ onBack }) => {
                 Follow @LabSynthE on Instagram
               </a>
 
-              {/* Email Link */}
               <a 
                 href="mailto:pragya.singh6906@gmail.com"
                 style={{ 

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-// Imports
 import bg1 from '../assets/images/background1.jpg';
 import bg2 from '../assets/images/background2.jpg';
 import bg3 from '../assets/images/background3.jpg';
@@ -24,7 +23,6 @@ const Home = ({ onSearch }) => {
   return (
     <div style={{ position: 'relative', height: '100vh', width: '100vw', overflow: 'hidden', backgroundColor: '#111', fontFamily: "'Rokkitt', serif" }}>
       
-      {/* 1. BACKGROUND CYCLE LAYER */}
       <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
         {backgrounds.map((img, index) => (
           <div
@@ -41,11 +39,9 @@ const Home = ({ onSearch }) => {
             }}
           />
         ))}
-        {/* Dark overlay to make text pop */}
         <div style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(0,0,0,0.4)', zIndex: 1 }}></div>
       </div>
 
-      {/* 2. CENTERED CONTENT LAYER */}
       <div style={{ 
         position: 'relative', 
         zIndex: 10, 
@@ -70,7 +66,6 @@ const Home = ({ onSearch }) => {
           find independently owned & run stores in your neighborhood
         </p>
 
-        {/* 3. SEARCH BAR STRIP */}
         <form 
           onSubmit={(e) => { e.preventDefault(); onSearch(zip, type); }}
           style={{ 

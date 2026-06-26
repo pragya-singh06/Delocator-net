@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-// Backgrounds for consistency
 import bg1 from '../assets/images/background1.jpg';
 import bg2 from '../assets/images/background2.jpg';
 import bg3 from '../assets/images/background3.jpg';
@@ -19,7 +18,6 @@ const About = ({ onBack, type, zip }) => {
   return (
     <div style={{ position: 'relative', height: '100vh', width: '100vw', overflow: 'hidden', backgroundColor: '#111', fontFamily: "'Rokkitt', serif" }}>
       
-      {/* 1. BACKGROUND LAYER */}
       <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
         {backgrounds.map((img, index) => (
           <div key={index} style={{ 
@@ -31,7 +29,6 @@ const About = ({ onBack, type, zip }) => {
         <div style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(0,0,0,0.5)', zIndex: 1 }}></div>
       </div>
 
-      {/* 2. THE FLOATING RECTANGLE CONTAINER */}
       <main style={{ 
         position: 'relative', 
         zIndex: 10, 
@@ -57,7 +54,6 @@ const About = ({ onBack, type, zip }) => {
           overflow: 'hidden'
         }}>
           
-          {/* ABOUT HEADER BAR */}
           <div style={{ padding: '20px 30px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderBottom: '1px solid #eee' }}>
             <h2 style={{ color: '#1d6331', margin: 0, fontSize: '32px', fontWeight: 'normal', fontFamily: "'Desyrel', sans-serif", textTransform: 'uppercase' }}>
               About
@@ -70,10 +66,8 @@ const About = ({ onBack, type, zip }) => {
             </div>
           </div>
 
-          {/* ABOUT CONTENT AREA */}
           <div style={{ display: 'flex', flex: 1, overflowY: 'auto', padding: '35px 40px' }}>
             
-            {/* LEFT SIDE: OUR STORY */}
             <div style={{ flex: 2, paddingRight: '40px', borderRight: '1px solid #eee' }}>
               <h3 style={{ color: '#1d6331', fontSize: '14px', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '20px', letterSpacing: '0.5px' }}>
                 Our Story
@@ -119,11 +113,9 @@ const About = ({ onBack, type, zip }) => {
                 <li>• New York Times, "The Little Coffee Shop Around the Corner," 5/4/05.</li>
               </ul>
 
-              {/* Explicit spacing layout safety cushion at the bottom of the scroll view */}
               <div style={{ height: '80px' }}></div>
             </div>
 
-            {/* RIGHT SIDE: PRESS & LINKS */}
             <div style={{ flex: 1, paddingLeft: '40px', display: 'flex', flexDirection: 'column', gap: '35px' }}>
               <div>
                 <h3 style={{ color: '#1d6331', fontSize: '14px', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '10px', letterSpacing: '0.5px' }}>
@@ -154,7 +146,6 @@ const About = ({ onBack, type, zip }) => {
                 </p>
               </div>
 
-              {/* Extra vertical scroll padding on the right sidebar column as well */}
               <div style={{ height: '60px' }}></div>
             </div>
 

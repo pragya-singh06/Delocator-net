@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-// Backgrounds for consistency
 import bg1 from '../assets/images/background1.jpg';
 import bg2 from '../assets/images/background2.jpg';
 import bg3 from '../assets/images/background3.jpg';
@@ -9,7 +8,6 @@ const AddEdit = ({ onBack }) => {
   const backgrounds = [bg1, bg2, bg3];
   const [currentBG, setCurrentBG] = useState(0);
   
-  // Form State Management
   const [isHuman, setIsHuman] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
@@ -26,13 +24,11 @@ const AddEdit = ({ onBack }) => {
     return () => clearInterval(interval);
   }, [backgrounds.length]);
 
-  // Handle Input Changes
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  // Reset Form Handler
   const handleReset = () => {
     setFormData({
       name: '',
@@ -43,7 +39,6 @@ const AddEdit = ({ onBack }) => {
     setFormStatus('');
   };
 
-  // Form Submission Handler via Formspree
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!isHuman) {
@@ -80,7 +75,6 @@ const AddEdit = ({ onBack }) => {
   return (
     <div style={{ position: 'relative', height: '100vh', width: '100vw', overflow: 'hidden', backgroundColor: '#111', fontFamily: "'Rokkitt', serif" }}>
       
-      {/* 1. BACKGROUND LAYER */}
       <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
         {backgrounds.map((img, index) => (
           <div key={index} style={{ 
@@ -92,7 +86,6 @@ const AddEdit = ({ onBack }) => {
         <div style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(0,0,0,0.5)', zIndex: 1 }}></div>
       </div>
 
-      {/* 2. THE MAIN CARD CONTAINER */}
       <main style={{ 
         position: 'relative', 
         zIndex: 10, 
@@ -117,7 +110,6 @@ const AddEdit = ({ onBack }) => {
           overflow: 'hidden'
         }}>
           
-          {/* Internal Header */}
           <div style={{ padding: '20px 30px', borderBottom: '1px solid #eee', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <h1 style={{ color: '#1d6331', margin: 0, fontSize: '32px', fontWeight: 'normal', fontFamily: "'Desyrel', sans-serif", textTransform: 'uppercase' }}>
               Delocator Help & Feedback
@@ -127,23 +119,19 @@ const AddEdit = ({ onBack }) => {
             </span>
           </div>
 
-          {/* Scrollable Content Area */}
           <div style={{ flex: 1, overflowY: 'auto', padding: '30px 40px' }}>
             <div style={{ color: '#444', lineHeight: '1.6', fontSize: '15px' }}>
               
-              {/* HOW IT WORKS SECTION */}
               <h3 style={{ color: '#1d6331', fontSize: '14px', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '10px', letterSpacing: '1px' }}>EXPLORING THE MAP</h3>
               <p style={{ marginBottom: '25px' }}>
                 Delocator dynamically queries live Google Maps API locations within your requested zip code area. Our system processes real-time search queries to cleanly separate mega-corporate conglomerates from independently owned local establishments. Use our categorical controls to find alternative coffee shops, small bookstores, boutique record shops, independent movie cinemas, and organic family-owned grocers near you.
               </p>
 
-              {/* REPORTING MISINFORMATION SECTION */}
               <h3 style={{ color: '#1d6331', fontSize: '14px', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '10px', letterSpacing: '1px' }}>REPORTING LABELS & MISINFORMATION</h3>
               <p style={{ marginBottom: '35px' }}>
                 Because our system utilizes a search method using partial brand name keywords (e.g., "Starbucks", "Barnes & Noble") to sort businesses, a local storefront or stylized corporate branch can occasionally get mixed up or sorted into the wrong directory tab. If you find a corporate chain hiding in the Local directory, or an independent shop flagged as a major corporation, please verify the human checkpoint below and notify us instantly using our internal support query form. 
               </p>
 
-              {/* SPAM PREVENTION CHECKPOINT */}
               <p style={{ fontWeight: 'bold', marginBottom: '20px', color: '#333' }}>1. SECURITY CHECKPOINT: PLEASE CONFIRM YOU ARE HUMAN</p>
               
               <div style={{ border: '1px solid #ccc', padding: '15px', width: '300px', display: 'flex', alignItems: 'center', gap: '15px', backgroundColor: '#f9f9f9', marginBottom: '25px', borderRadius: '4px' }}>
@@ -157,7 +145,6 @@ const AddEdit = ({ onBack }) => {
                   <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="captcha" style={{ height: '30px', marginLeft: 'auto' }} />
               </div>
 
-              {/* 3. DYNAMIC INBUILT FORM */}
               {isHuman && (
                 <div style={{ animation: 'fadeIn 0.5s ease-in-out', borderTop: '2px solid #1d6331', paddingTop: '25px', marginTop: '25px' }}>
                   <p style={{ fontWeight: 'bold', marginBottom: '20px', color: '#333' }}>2. SUBMIT AN ACCOUNTABILITY INQUIRY OR BUG REPORT</p>
@@ -216,7 +203,6 @@ const AddEdit = ({ onBack }) => {
                       ></textarea>
                     </div>
 
-                    {/* SUBMISSION ACTION BUTTONS */}
                     <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginTop: '10px' }}>
                       <button type="submit" style={{ 
                         backgroundColor: '#1d6331', color: 'white', padding: '12px 30px', cursor: 'pointer', borderRadius: '25px', border: 'none', fontWeight: 'bold', fontSize: '14px'
@@ -231,7 +217,6 @@ const AddEdit = ({ onBack }) => {
                       </button>
                     </div>
 
-                    {/* Response Status Notification Banner */}
                     {formStatus && (
                       <div style={{ 
                         marginTop: '10px', 
@@ -250,7 +235,6 @@ const AddEdit = ({ onBack }) => {
                 </div>
               )}
               
-              {/* Extra vertical spacing buffer */}
               <div style={{ height: '60px' }}></div>
             </div>
           </div>

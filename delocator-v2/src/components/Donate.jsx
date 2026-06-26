@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-// Backgrounds for consistency
 import bg1 from '../assets/images/background1.jpg';
 import bg2 from '../assets/images/background2.jpg';
 import bg3 from '../assets/images/background3.jpg';
@@ -16,20 +15,17 @@ const Donate = ({ onBack, type }) => {
     return () => clearInterval(interval);
   }, [backgrounds.length]);
 
-  // Payment Redirection Handlers
   const handlePayPalDonate = () => {
     window.open('https://www.paypal.me/pragyasingh646', '_blank');
   };
 
   const handleCreditCardDonate = () => {
-    // ⚠️ REPLACE with your Stripe payment link, BuyMeACoffee, or custom gateway link
     window.open('https://buy.stripe.com/test_00waEWfoV3EKd6Idf31ZS00', '_blank');
   };
 
   return (
     <div style={{ position: 'relative', height: '100vh', width: '100vw', overflow: 'hidden', backgroundColor: '#111', fontFamily: "'Rokkitt', serif" }}>
       
-      {/* 1. BACKGROUND LAYER */}
       <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
         {backgrounds.map((img, index) => (
           <div key={index} style={{ 
@@ -41,7 +37,6 @@ const Donate = ({ onBack, type }) => {
         <div style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(0,0,0,0.5)', zIndex: 1 }}></div>
       </div>
 
-      {/* 2. THE FLOATING RECTANGLE CONTAINER */}
       <main style={{ 
         position: 'relative', 
         zIndex: 10, 
@@ -67,7 +62,6 @@ const Donate = ({ onBack, type }) => {
           overflow: 'hidden'
         }}>
           
-          {/* DONATE HEADER BAR (Matching modern FAQ and AddEdit styling) */}
           <div style={{ padding: '20px 30px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderBottom: '1px solid #eee' }}>
             <h2 style={{ color: '#1d6331', margin: 0, fontSize: '32px', fontWeight: 'normal', fontFamily: "'Desyrel', sans-serif", textTransform: 'uppercase' }}>
               Donate
@@ -80,10 +74,8 @@ const Donate = ({ onBack, type }) => {
             </div>
           </div>
 
-          {/* DONATE CONTENT AREA */}
           <div style={{ display: 'flex', flex: 1, overflowY: 'auto', padding: '35px 40px' }}>
             
-            {/* LEFT SIDE: MAIN MESSAGE */}
             <div style={{ flex: 2, paddingRight: '40px', borderRight: '1px solid #eee' }}>
               <div style={{ marginBottom: '40px' }}>
                 <h3 style={{ color: '#1d6331', fontSize: '14px', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '15px', letterSpacing: '0.5px' }}>
@@ -94,7 +86,6 @@ const Donate = ({ onBack, type }) => {
                 </p>
               </div>
 
-              {/* DONATION ACTIONS */}
               <div style={{ backgroundColor: '#f9f9f9', padding: '25px', borderRadius: '10px', border: '1px solid #eee' }}>
                 <p style={{ margin: '0 0 15px 0', fontWeight: 'bold', color: '#333', fontSize: '15px' }}>Support the project:</p>
                 <div style={{ display: 'flex', gap: '15px' }}>
@@ -121,7 +112,6 @@ const Donate = ({ onBack, type }) => {
               </div>
             </div>
 
-            {/* RIGHT SIDE: INFO PANELS */}
             <div style={{ flex: 1, paddingLeft: '40px', display: 'flex', flexDirection: 'column', gap: '35px' }}>
               <div>
                 <h3 style={{ color: '#1d6331', fontSize: '14px', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '10px', letterSpacing: '0.5px' }}>

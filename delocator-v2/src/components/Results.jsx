@@ -60,7 +60,6 @@ function isChain(name, types = []) {
   return !!getNormalizedCorporateName(name);
 }
 
-// ─── Category map ────────────────────────────────────────────────────────────
 const CATEGORY_MAP = {
   '3': 'cinema theater',
   '1': 'coffee shop cafe',
@@ -388,7 +387,6 @@ const Results = ({ zip: initialZip, type: initialType, onBack }) => {
             </div>
           </div>
 
-          {/* FOOTER */}
           <div style={{ padding: '15px 30px', backgroundColor: '#f1f1f1', display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderTop: '1px solid #eee' }}>
             <div style={{ display: 'flex', gap: '20px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12px', fontWeight: 'bold', color: '#444' }}>

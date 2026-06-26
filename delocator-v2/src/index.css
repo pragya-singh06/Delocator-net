@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* This forces the app to actually take up the whole screen and center things */
 #root {
   width: 100%;
   margin: 0;
@@ -20,7 +19,6 @@ body {
 }
 
 
-/* ─── RALEWAY MEDIUM FONT REGISTRATION ─── */
 @font-face {
   font-family: 'Raleway Medium';
   src: url('./assets/fonts/raleway/raleway-medium-webfont.woff') format('woff'),
@@ -30,7 +28,6 @@ body {
 }
 
 
-/* 1. Declare the Desyrel Font */
 @font-face {
   font-family: 'Desyrel';
   src: url('/src/assets/fonts/desyrel/DESYREL_.ttf') format('truetype');
@@ -38,7 +35,6 @@ body {
   font-style: normal;
 }
 
-/* 2. Declare the Rokkitt Font (Updated for your new TTF file) */
 @font-face {
   font-family: 'Rokkitt';
   src: url('/src/assets/fonts/rokkitt/Rokkitt-VariableFont_wght.ttf') format('truetype'); /* 👈 Exact file name match */

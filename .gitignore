@@ -1,22 +1,16 @@
-# Local env files
+
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-# Local env files (Updated to catch everything!)
-.env
-.env.local
-.env.development.local
+*.env.[a-zA-Z]*
+*.local
 **/.env
-**/node_modules/
-# Dependencies
+**/.env.*
+
 node_modules/
+**/node_modules/
 dist/
 dist-ssr/
-*.local
+build/
 
-# Editor directories and files
 .vscode/
 .idea/
 *.suo
@@ -24,3 +18,5 @@ dist-ssr/
 *.njsproj
 *.sln
 *.sw?
+.DS_Store
+Thumbs.db
