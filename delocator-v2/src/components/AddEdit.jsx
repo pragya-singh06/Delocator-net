@@ -124,7 +124,7 @@ const AddEdit = ({ onBack }) => {
               
               <h3 style={{ color: '#1d6331', fontSize: '14px', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '10px', letterSpacing: '1px' }}>EXPLORING THE MAP</h3>
               <p style={{ marginBottom: '25px' }}>
-                Delocator queries live Google Maps API locations within your zip code area. Our system processes real-time queries to cleanly separate mega-corporates from independently owned local establishments. Use our delocator to find alternative coffee shops, small bookstores, record shops, independent movie cinemas, and organic family-owned grocers near you.
+                Our system processes real-time queries to cleanly separate mega-corporates from independently owned local establishments. Use our delocator to find alternative coffee shops, small bookstores, record shops, independent movie cinemas, and organic family-owned grocers near you.
               </p>
 
               <h3 style={{ color: '#1d6331', fontSize: '14px', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '10px', letterSpacing: '1px' }}>REPORTING LABELS & MISINFORMATION</h3>
