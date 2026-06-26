@@ -137,14 +137,6 @@ const About = ({ onBack, type, zip }) => {
                 </ul>
               </div>
 
-              <div>
-                <h3 style={{ color: '#1d6331', fontSize: '14px', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '10px', letterSpacing: '0.5px' }}>
-                  Add a Store
-                </h3>
-                <p style={{ fontSize: '13px', color: '#666', lineHeight: '1.6' }}>
-                  <span style={{ color: '#1d6331', textDecoration: 'underline', cursor: 'pointer', fontWeight: 'bold' }}>Click here</span> to add independently owned stores to the database and delocate corporate retail!
-                </p>
-              </div>
 
               <div style={{ height: '60px' }}></div>
             </div>
