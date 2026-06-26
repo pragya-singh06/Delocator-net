@@ -147,9 +147,9 @@ const AddEdit = ({ onBack }) => {
 
               {isHuman && (
                 <div style={{ animation: 'fadeIn 0.5s ease-in-out', borderTop: '2px solid #1d6331', paddingTop: '25px', marginTop: '25px' }}>
-                  <p style={{ fontWeight: 'bold', marginBottom: '20px', color: '#333' }}>2. SUBMIT AN ACCOUNTABILITY INQUIRY OR BUG REPORT</p>
+                  <p style={{ fontWeight: 'bold', marginBottom: '20px', color: '#333', maxWidth: '600px', margin: '0 auto 20px', textAlign: 'center' }}>2. SUBMIT AN ACCOUNTABILITY INQUIRY OR BUG REPORT</p>
                   
-                  <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '20px', maxWidth: '600px' }}>
+                  <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '20px', maxWidth: '600px', margin: '0 auto' }}>
                     
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
                       <label style={{ fontWeight: 'bold', fontSize: '13px', color: '#555' }}>Your Name:</label>
