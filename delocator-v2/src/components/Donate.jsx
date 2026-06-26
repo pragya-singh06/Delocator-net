@@ -41,7 +41,7 @@ const Donate = ({ onBack, type }) => {
         position: 'relative', 
         zIndex: 10, 
         display: 'flex', 
-        justify: 'center', 
+        justifyContent: 'center', 
         alignItems: 'center', 
         justifyContent: 'center',
         padding: '50px 20px 80px', 
@@ -86,9 +86,9 @@ const Donate = ({ onBack, type }) => {
                 </p>
               </div>
 
-              <div style={{ backgroundColor: '#f9f9f9', padding: '25px', borderRadius: '10px', border: '1px solid #eee' }}>
-                <p style={{ margin: '0 0 15px 0', fontWeight: 'bold', color: '#333', fontSize: '15px' }}>Support the project:</p>
-                <div style={{ display: 'flex', gap: '15px' }}>
+              <div style={{ backgroundColor: '#f9f9f9', padding: '25px', borderRadius: '10px', border: '1px solid #eee', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                <p style={{ margin: '0 0 15px 0', fontWeight: 'bold', color: '#333', fontSize: '15px', width: '100%', textAlign: 'center' }}>Support the project:</p>
+                <div style={{ display: 'flex', gap: '15px', justifyContent: 'center', width: '100%' }}>
                   <button 
                     onClick={handlePayPalDonate}
                     style={{ backgroundColor: '#0070ba', color: 'white', padding: '12px 28px', borderRadius: '25px', border: 'none', fontWeight: 'bold', cursor: 'pointer', transition: 'background-color 0.2s', fontSize: '14px' }}
@@ -106,7 +106,7 @@ const Donate = ({ onBack, type }) => {
                     Credit Card
                   </button>
                 </div>
-                <p style={{ marginTop: '15px', fontSize: '12.5px', color: '#777', fontStyle: 'italic' }}>
+                <p style={{ marginTop: '15px', fontSize: '12.5px', color: '#777', fontStyle: 'italic', width: '100%', textAlign: 'center' }}>
                   * Even the price of a cup of coffee helps!
                 </p>
               </div>
