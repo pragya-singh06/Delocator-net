@@ -63,7 +63,7 @@ const Home = ({ onSearch }) => {
         <img src={starTrio} alt="stars" style={{ height: '30px', marginBottom: '20px', filter: 'brightness(0) invert(1)' }} />
 
         <p style={{ fontSize: '1.5rem', fontStyle: 'italic', maxWidth: '600px', marginBottom: '40px', fontFamily: "'Rokkitt', serif" }}>
-          find independently owned & run stores in your neighborhood
+          Find independently owned & run stores in your neighborhood
         </p>
 
         <form 

@@ -8,7 +8,6 @@ const GOOGLE_MAPS_LIBRARIES = ['marker', 'places'];
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* Wrap your entire application single-instance style */}
     <LoadScript
       id="google-map-script"
       googleMapsApiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}
