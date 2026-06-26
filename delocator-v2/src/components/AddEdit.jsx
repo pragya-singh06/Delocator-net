@@ -124,12 +124,12 @@ const AddEdit = ({ onBack }) => {
               
               <h3 style={{ color: '#1d6331', fontSize: '14px', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '10px', letterSpacing: '1px' }}>EXPLORING THE MAP</h3>
               <p style={{ marginBottom: '25px' }}>
-                Delocator dynamically queries live Google Maps API locations within your requested zip code area. Our system processes real-time search queries to cleanly separate mega-corporate conglomerates from independently owned local establishments. Use our categorical controls to find alternative coffee shops, small bookstores, boutique record shops, independent movie cinemas, and organic family-owned grocers near you.
+                Delocator queries live Google Maps API locations within your zip code area. Our system processes real-time queries to cleanly separate mega-corporates from independently owned local establishments. Use our delocator to find alternative coffee shops, small bookstores, record shops, independent movie cinemas, and organic family-owned grocers near you.
               </p>
 
               <h3 style={{ color: '#1d6331', fontSize: '14px', fontWeight: 'bold', textTransform: 'uppercase', marginBottom: '10px', letterSpacing: '1px' }}>REPORTING LABELS & MISINFORMATION</h3>
               <p style={{ marginBottom: '35px' }}>
-                Because our system utilizes a search method using partial brand name keywords (e.g., "Starbucks", "Barnes & Noble") to sort businesses, a local storefront or stylized corporate branch can occasionally get mixed up or sorted into the wrong directory tab. If you find a corporate chain hiding in the Local directory, or an independent shop flagged as a major corporation, please verify the human checkpoint below and notify us instantly using our internal support query form. 
+                Because our system utilizes a search method using partial brand name keywords (e.g., "Starbucks", "Barnes & Noble") to sort businesses, a local storefront or stylized corporate branch can occasionally get mixed up or sorted into the wrong directory tab. If you find a corporate chain hiding in the Local directory, or an independent shop flagged as a major corporation, please click the captcha below and notify us using our internal support query form. 
               </p>
 
               <p style={{ fontWeight: 'bold', marginBottom: '20px', color: '#333' }}>1. SECURITY CHECKPOINT: PLEASE CONFIRM YOU ARE HUMAN</p>

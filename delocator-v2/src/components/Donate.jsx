@@ -127,7 +127,7 @@ const Donate = ({ onBack, type }) => {
                   Help Clean Up Labels
                 </h3>
                 <p style={{ fontSize: '13px', color: '#666', lineHeight: '1.6' }}>
-                  Notice a chain store sneaking by your local directory tabs? Skip manual entry databases entirely. Hit our help portal to start an account ticket so we can tune up our algorithms!
+                  Notice a chain store sneaking by into your local directory tabs? Hit our Add&Edit page to start a ticket so we can tune up our algorithms!
                 </p>
               </div>
 
